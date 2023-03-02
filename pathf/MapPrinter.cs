@@ -5,8 +5,15 @@ using System.Collections.Generic;
 
 public class MapPrinter
 {
-    public void Print(string[,] maze)
+    public void Print(string[,] maze, List<Point> shortestPath)
     {
+        maze[shortestPath[0].Row, shortestPath[0].Column] = "A";
+        maze[shortestPath[^1].Row, shortestPath[^1].Column] = "B";
+        for (int i = 1; i < shortestPath.Count - 1; i++)
+        {
+            maze[shortestPath[i].Column, shortestPath[i].Row] = "*";
+        }
+
         PrintTopLine();
         for (var row = 0; row < maze.GetLength(1); row++)
         {
@@ -18,6 +25,7 @@ public class MapPrinter
 
             Console.WriteLine();
         }
+        
 
         void PrintTopLine()
         {

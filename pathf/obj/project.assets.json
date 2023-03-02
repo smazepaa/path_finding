@@ -8,19 +8,19 @@
     "net7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\sofma\\.nuget\\packages\\": {}
+    "/Users/platonovskaaa/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sofma\\path_finding\\pathf\\pathf.csproj",
+      "projectUniqueName": "/Users/platonovskaaa/RiderProjects/path_finding2/pathf/pathf.csproj",
       "projectName": "pathf",
-      "projectPath": "C:\\Users\\sofma\\path_finding\\pathf\\pathf.csproj",
-      "packagesPath": "C:\\Users\\sofma\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sofma\\path_finding\\pathf\\obj\\",
+      "projectPath": "/Users/platonovskaaa/RiderProjects/path_finding2/pathf/pathf.csproj",
+      "packagesPath": "/Users/platonovskaaa/.nuget/packages/",
+      "outputPath": "/Users/platonovskaaa/RiderProjects/path_finding2/pathf/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\sofma\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/Users/platonovskaaa/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
@@ -59,7 +59,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.102/RuntimeIdentifierGraph.json"
       }
     }
   }

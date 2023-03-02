@@ -4,11 +4,37 @@
     <projectFile>pathf.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c4781cd-6e7b-4a7b-a4a6-05658fa11b45" name="Changes" comment="" />
+    <list default="true" id="4c4781cd-6e7b-4a7b-a4a6-05658fa11b45" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.pathf/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.pathf/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MapPrinter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MapPrinter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Point.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Point.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net7.0/pathf.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net7.0/pathf.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net7.0/pathf.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net7.0/pathf.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/pathf.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/pathf.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/pathf.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/pathf.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/pathf.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/pathf.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/pathf.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/pathf.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/pathf.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/pathf.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/pathf.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/pathf.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/pathf.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/pathf.genruntimeconfig.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/pathf.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/pathf.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/ref/pathf.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/ref/pathf.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/refint/pathf.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/refint/pathf.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/pathf.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/pathf.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/pathf.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/obj/pathf.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/obj/rider.project.restore.info" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/a421bf72ce1bd97d2cd3e8739d53f71ff6052294923c475677806b3df7381/ThrowHelper.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -18,22 +44,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Console Font",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.Console Font&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "C:\\Users\\sofma\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\DecompilerCache",
-      "C:\\Users\\sofma\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\SourcesCache",
-      "C:\\Users\\sofma\\AppData\\Local\\Symbols\\src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;/Users/platonovskaaa/Library/Application Support/JetBrains/Rider2022.3/resharper-host/DecompilerCache&quot;,
+      &quot;/Users/platonovskaaa/Library/Application Support/JetBrains/Rider2022.3/resharper-host/SourcesCache&quot;,
+      &quot;/Users/platonovskaaa/.local/share/Symbols/src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="pathf" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -63,6 +89,9 @@
       <option name="presentableId" value="Default" />
       <updated>1677266435296</updated>
       <workItem from="1677266436629" duration="679000" />
+      <workItem from="1677348995660" duration="781000" />
+      <workItem from="1677358156022" duration="47000" />
+      <workItem from="1677773221969" duration="6646000" />
     </task>
     <servers />
   </component>
@@ -72,5 +101,50 @@
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/MapPrinter.cs</url>
+          <line>22</line>
+          <properties documentPath="$PROJECT_DIR$/MapPrinter.cs" initialLine="15" containingFunctionPresentation="method 'Print'">
+            <startOffsets>
+              <option value="674" />
+            </startOffsets>
+            <endOffsets>
+              <option value="707" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Program.cs</url>
+          <line>15</line>
+          <properties documentPath="$PROJECT_DIR$/Program.cs" initialLine="15" containingFunctionPresentation="">
+            <startOffsets>
+              <option value="290" />
+            </startOffsets>
+            <endOffsets>
+              <option value="324" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Program.cs</url>
+          <line>52</line>
+          <properties documentPath="$PROJECT_DIR$/Program.cs" initialLine="52" containingFunctionPresentation="local function 'GetShortestPath'">
+            <startOffsets>
+              <option value="1190" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1213" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -10,4 +10,5 @@ public struct Point
         Column = column;
         Row = row;
     }
+    
 }
