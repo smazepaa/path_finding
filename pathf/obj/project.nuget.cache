@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zHpomELA4ghLSdTsGc8K3kduI4pZw9gYN/Mgpj5XAsqVxMStbTPHNmFjHCy3vgRtIuMNAAlXw3Yf89vyiVuvVQ==",
+  "dgSpecHash": "hc5tva8Z1LfliCxiSTcP21p8ZeoElla4VJ65g6iSKT7egme5U9JjKNwaViCccye7eIPYhDcRpAE0vFw//8Tscw==",
   "success": true,
-  "projectFilePath": "/Users/platonovskaaa/RiderProjects/path_finding2/pathf/pathf.csproj",
+  "projectFilePath": "C:\\Users\\sofma\\path_finding\\pathf\\pathf.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

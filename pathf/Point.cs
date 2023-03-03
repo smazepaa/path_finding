@@ -11,4 +11,13 @@ public struct Point
         Row = row;
     }
     
+    public bool Equals(Point other)
+    {
+        return Column == other.Column && Row == other.Row;
+    }
+
+    public override int GetHashCode()
+    {
+        return HashCode.Combine(Column, Row);
+    }
 }

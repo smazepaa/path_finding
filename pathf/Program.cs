@@ -1,6 +1,6 @@
 ﻿using pathf;
 
-
+// generating the map
 var generator = new MapGenerator(new MapGeneratorOptions()
 {
     Height = 35,
@@ -19,25 +19,29 @@ new MapPrinter().Print(map, path);
 
 List<Point> GetShortestPath(string[,] map, Point start, Point goal)
 {
+    // creating list of points of the path
     List<Point> shortestPath = new List<Point>();
     shortestPath.Add(start);
     
-    var distances = new Dictionary<Point, int>();
-    var origins = new Dictionary<Point, Point>();
+    var distances = new Dictionary<Point, int>(); // dict with distances between points (weight of each edge)
+    var origins = new Dictionary<Point, Point>(); // create to find later its neighbours (from which we go)
 
-    var frontier = new PriorityQueue<Point, int>();
+    var frontier = new PriorityQueue<Point, int>(); 
     frontier.Enqueue(start, 0);
-    origins[start] = start;
+    origins[start] = start; // to remember point (0;0)
     distances[start] = 0;
     
+    Point current = default;
     while (frontier.Count != 0)
     {
-        var current = frontier.Dequeue();
+        // ? verification doesn't work
+        var neighbours = GetNeighbours(map, current);
+        current = frontier.Dequeue();
         if (current.Equals(goal))
         {
             break;
         }
-        var neighbours = GetNeighbours(map, current);
+        
         foreach (var next in neighbours)
         {
             var newDistance = distances[current] + 1;
@@ -47,11 +51,11 @@ List<Point> GetShortestPath(string[,] map, Point start, Point goal)
                 var priority = newDistance;
                 frontier.Enqueue(next, priority);
                 origins[next] = current;
-            }    
+            }
         }
     }
 
-    var curr = new Point(32, 33);
+    var curr = current;
     while (!curr.Equals(start))
     {
         shortestPath.Add(curr);
@@ -60,7 +64,6 @@ List<Point> GetShortestPath(string[,] map, Point start, Point goal)
     
     shortestPath.Add(goal);
     return shortestPath;
-    // your code here
 }
 
 List<Point> GetNeighbours(string[,] map, Point point)
@@ -69,9 +72,9 @@ List<Point> GetNeighbours(string[,] map, Point point)
     var width = map.GetLength(0);
     var height = map.GetLength(1);
     
-    if (point.Column - 1 != -1)
+    if (point.Column - 1 != -1) // if we go left, !=-1 so we don't go outside the map
     {
-        if (map[point.Column - 1, point.Row] != "█")
+        if (map[point.Column - 1, point.Row] != "█") // if it's not a wall
         {
             neighbours.Add(new Point(point.Column - 1, point.Row));
         }
@@ -85,7 +88,7 @@ List<Point> GetNeighbours(string[,] map, Point point)
         }
     }
 
-    if (point.Column + 1 >= 0 && point.Column + 1 < map.GetLength(0) - 1 && point.Row <= map.GetLength(0) - 1)
+    if (point.Column + 1 >= 0 && point.Column + 1 < width && point.Row < height)
     {
         if (map[point.Column + 1, point.Row] != "█")
         {
@@ -93,7 +96,7 @@ List<Point> GetNeighbours(string[,] map, Point point)
         }    
     }
 
-    if (point.Row + 1 >= 0 && point.Row + 1 < map.GetLength(1) - 1 && point.Column <= map.GetLength(0) - 1)
+    if (point.Row + 1 >= 0 && point.Row + 1 < height && point.Column < width)
     {
         if (map[point.Column, point.Row + 1] != "█")
         {
@@ -101,8 +104,22 @@ List<Point> GetNeighbours(string[,] map, Point point)
         }            
     }
 
+    foreach (var n in neighbours)
+    {
+        if (map[n.Column, n.Row] == "B")
+        {
+            Console.WriteLine("B");
+        }
+    }
+
     return neighbours;
 }
 
 //Console.WriteLine(map.GetLength(0));
 //Console.WriteLine(map.GetLength(1));
+
+// dimension 0 - width - columns
+// dimension 1 - height - rows
+
+// check movement cost
+// a star and heuristic

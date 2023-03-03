@@ -4,21 +4,15 @@
     <projectFile>pathf.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c4781cd-6e7b-4a7b-a4a6-05658fa11b45" name="Changes" comment="Modified function 'Print' in MapPrinter.cs in order to print shortest path. Added start point as 'A' and endpoint as 'B', works properly. Added &quot;GetNeighbours&quot; function to find neighbours of the point, need to fix as there is no neighbour of the last point. Added &quot;FindShortestPath&quot; function which find shortest pass(still to implement distance cost).">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.pathf/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.pathf/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net7.0/pathf.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net7.0/pathf.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/net7.0/pathf.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net7.0/pathf.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/pathf.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/pathf.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/net7.0/pathf.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net7.0/pathf.pdb" afterDir="false" />
-    </list>
+    <list default="true" id="4c4781cd-6e7b-4a7b-a4a6-05658fa11b45" name="Changes" comment="Modified function 'Print' in MapPrinter.cs in order to print shortest path. Added start point as 'A' and endpoint as 'B', works properly. Added &quot;GetNeighbours&quot; function to find neighbours of the point, need to fix as there is no neighbour of the last point. Added &quot;FindShortestPath&quot; function which find shortest pass(still to implement distance cost)." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/a421bf72ce1bd97d2cd3e8739d53f71ff6052294923c475677806b3df7381/ThrowHelper.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/36e740b59df23626d207e72ea77e34298e53dd99db463eee529f8c416b5664/ThrowHelper.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/946d42e3573fb27245b682703c129c21b2b471d74fac086296ee2dd68772534/ValueType.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -40,9 +34,9 @@
   },
   "keyToStringList": {
     "rider.external.source.directories": [
-      "/Users/platonovskaaa/Library/Application Support/JetBrains/Rider2022.3/resharper-host/DecompilerCache",
-      "/Users/platonovskaaa/Library/Application Support/JetBrains/Rider2022.3/resharper-host/SourcesCache",
-      "/Users/platonovskaaa/.local/share/Symbols/src"
+      "C:\\Users\\sofma\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\DecompilerCache",
+      "C:\\Users\\sofma\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\SourcesCache",
+      "C:\\Users\\sofma\\AppData\\Local\\Symbols\\src"
     ]
   }
 }]]></component>
@@ -78,6 +72,7 @@
       <workItem from="1677348995660" duration="781000" />
       <workItem from="1677358156022" duration="47000" />
       <workItem from="1677773221969" duration="9459000" />
+      <workItem from="1677789714077" duration="9975000" />
     </task>
     <task id="LOCAL-00001" summary="Modified function 'Print' in MapPrinter.cs in order to print shortest path. Added start point as 'A' and endpoint as 'B', works properly. Added &quot;GetNeighbours&quot; function to find neighbours of the point, need to fix as there is no neighbour of the last point. Added &quot;FindShortestPath&quot; function which find shortest pass(still to implement distance cost).">
       <created>1677780570706</created>
@@ -115,29 +110,16 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Program.cs</url>
-          <line>15</line>
-          <properties documentPath="$PROJECT_DIR$/Program.cs" initialLine="15" containingFunctionPresentation="">
+          <line>110</line>
+          <properties documentPath="C:\Users\sofma\path_finding\pathf\Program.cs" initialLine="110" containingFunctionPresentation="local function 'GetNeighbours'">
             <startOffsets>
-              <option value="290" />
+              <option value="3025" />
             </startOffsets>
             <endOffsets>
-              <option value="324" />
+              <option value="3048" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Program.cs</url>
-          <line>57</line>
-          <properties documentPath="$PROJECT_DIR$/Program.cs" initialLine="57" containingFunctionPresentation="local function 'GetShortestPath'">
-            <startOffsets>
-              <option value="1458" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1479" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="16" />
+          <option name="timeStamp" value="24" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
