@@ -8,8 +8,8 @@ public class MapPrinter
     public void Print(string[,] maze, List<Point> shortestPath)
     {
         maze[shortestPath[0].Row, shortestPath[0].Column] = "A";
-        maze[shortestPath[^1].Row, shortestPath[^1].Column] = "B";
-        for (int i = 1; i < shortestPath.Count - 1; i++)
+        maze[shortestPath[^1].Column, shortestPath[^1].Row] = "B";
+        for (int i = 2; i < shortestPath.Count - 1; i++)
         {
             maze[shortestPath[i].Column, shortestPath[i].Row] = "*";
         }

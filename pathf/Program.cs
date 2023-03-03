@@ -5,11 +5,11 @@ var generator = new MapGenerator(new MapGeneratorOptions()
 {
     Height = 35,
     Width = 90,
-    Seed = 11
+    Seed = 10
 });
 
 var startPoint = new Point(0, 0);
-var endPoint = new Point(33, 88);
+var endPoint = new Point(34, 32);
 
 string[,] map = generator.Generate();
 var path = GetShortestPath(map, startPoint, endPoint);
@@ -35,13 +35,12 @@ List<Point> GetShortestPath(string[,] map, Point start, Point goal)
     while (frontier.Count != 0)
     {
         // ? verification doesn't work
-        var neighbours = GetNeighbours(map, current);
         current = frontier.Dequeue();
         if (current.Equals(goal))
         {
             break;
         }
-        
+        var neighbours = GetNeighbours(map, current);
         foreach (var next in neighbours)
         {
             var newDistance = distances[current] + 1;
