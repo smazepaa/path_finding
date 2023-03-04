@@ -5,16 +5,19 @@ var generator = new MapGenerator(new MapGeneratorOptions()
 {
     Height = 35,
     Width = 90,
-    Seed = 10
+    Seed = 10,
+    Noise = .1f,
+    AddTraffic = true,
+    TrafficSeed = 1234
 });
 
 var startPoint = new Point(0, 0);
-var endPoint = new Point(34, 32);
+var endPoint = new Point(16, 30);
 
+List<float> times = new List<float>();
 string[,] map = generator.Generate();
 var path = GetShortestPath(map, startPoint, endPoint);
 new MapPrinter().Print(map, path);
-
 
 
 List<Point> GetShortestPath(string[,] map, Point start, Point goal)
@@ -25,12 +28,15 @@ List<Point> GetShortestPath(string[,] map, Point start, Point goal)
     
     var distances = new Dictionary<Point, int>(); // dict with distances between points (weight of each edge)
     var origins = new Dictionary<Point, Point>(); // create to find later its neighbours (from which we go)
+    var velocities = new Dictionary<Point, float>();
+    var time = new Dictionary<Point, float>();
+    
 
     var frontier = new PriorityQueue<Point, int>(); 
     frontier.Enqueue(start, 0);
     origins[start] = start; // to remember point (0;0)
     distances[start] = 0;
-    
+
     Point current = default;
     while (frontier.Count != 0)
     {
@@ -43,9 +49,13 @@ List<Point> GetShortestPath(string[,] map, Point start, Point goal)
         var neighbours = GetNeighbours(map, current);
         foreach (var next in neighbours)
         {
-            var newDistance = distances[current] + 1;
+            var n = Convert.ToInt32(map[next.Column, next.Row]);
+            
+            var newDistance = distances[current] + n;
             if (!origins.ContainsKey(next) || newDistance < distances[next])
             {
+                velocities[next] = 60 - (n - 1) * 6;
+                times.Add(1/velocities[next]);
                 distances[next] = newDistance;
                 var priority = newDistance;
                 frontier.Enqueue(next, priority);
@@ -114,6 +124,10 @@ List<Point> GetNeighbours(string[,] map, Point point)
     return neighbours;
 }
 
+
+float totalTime = times.Sum();
+Console.WriteLine();
+Console.WriteLine("total travel time:" + Math.Round(totalTime, 2) + "hours");
 //Console.WriteLine(map.GetLength(0));
 //Console.WriteLine(map.GetLength(1));
 
