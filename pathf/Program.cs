@@ -1,14 +1,10 @@
 ﻿using pathf;
 
-// generating the map
 var generator = new MapGenerator(new MapGeneratorOptions()
 {
     Height = 35,
     Width = 90,
     Seed = 10,
-    Noise = .1f,
-    AddTraffic = true,
-    TrafficSeed = 1234
 });
 
 var startPoint = new Point(0, 0);
@@ -34,13 +30,12 @@ List<Point> GetShortestPath(string[,] map, Point start, Point goal)
 
     var frontier = new PriorityQueue<Point, int>(); 
     frontier.Enqueue(start, 0);
-    origins[start] = start; // to remember point (0;0)
+    origins[start] = start;
     distances[start] = 0;
 
     Point current = default;
     while (frontier.Count != 0)
     {
-        // ? verification doesn't work
         current = frontier.Dequeue();
         if (current.Equals(goal))
         {
@@ -49,15 +44,11 @@ List<Point> GetShortestPath(string[,] map, Point start, Point goal)
         var neighbours = GetNeighbours(map, current);
         foreach (var next in neighbours)
         {
-            var n = Convert.ToInt32(map[next.Column, next.Row]);
-            
-            var newDistance = distances[current] + n;
+            var newDistance = distances[current] + 1;
             if (!origins.ContainsKey(next) || newDistance < distances[next])
             {
-                velocities[next] = 60 - (n - 1) * 6;
-                times.Add(1/velocities[next]);
                 distances[next] = newDistance;
-                var priority = newDistance;
+                var priority = newDistance + Manhattan(goal, next);
                 frontier.Enqueue(next, priority);
                 origins[next] = current;
             }
@@ -73,6 +64,11 @@ List<Point> GetShortestPath(string[,] map, Point start, Point goal)
     
     shortestPath.Add(goal);
     return shortestPath;
+}
+
+int Manhattan(Point goal, Point next)
+{
+    return Math.Abs(goal.Row - next.Row) + Math.Abs(goal.Column - next.Column);
 }
 
 List<Point> GetNeighbours(string[,] map, Point point)
@@ -113,26 +109,7 @@ List<Point> GetNeighbours(string[,] map, Point point)
         }            
     }
 
-    foreach (var n in neighbours)
-    {
-        if (map[n.Column, n.Row] == "B")
-        {
-            Console.WriteLine("B");
-        }
-    }
 
     return neighbours;
 }
-
-
-float totalTime = times.Sum();
-Console.WriteLine();
-Console.WriteLine("total travel time:" + Math.Round(totalTime, 2) + "hours");
-//Console.WriteLine(map.GetLength(0));
-//Console.WriteLine(map.GetLength(1));
-
-// dimension 0 - width - columns
-// dimension 1 - height - rows
-
-// check movement cost
-// a star and heuristic
+Console.WriteLine(path.Count);
