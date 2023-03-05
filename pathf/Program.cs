@@ -4,7 +4,9 @@ var generator = new MapGenerator(new MapGeneratorOptions()
 {
     Height = 35,
     Width = 90,
-    Seed = 16
+    Seed = 16,
+    AddTraffic = true,
+    TrafficSeed = 1234
 });
 
 var startPoint = new Point(0, 0);
@@ -39,7 +41,8 @@ List<Point> GetShortestPath(string[,] map, Point start, Point goal)
         var neighbours = GetNeighbours(map, current);
         foreach (var next in neighbours)
         {
-            var newDistance = distances[current] + 1;
+            var n = Convert.ToInt32(map[next.Column, next.Row]);
+            var newDistance = distances[current] + n;
             if (!origins.ContainsKey(next) || newDistance < distances[next])
             {
                 distances[next] = newDistance;
@@ -61,7 +64,7 @@ List<Point> GetShortestPath(string[,] map, Point start, Point goal)
     return shortestPath;
 }
 
-int Heuristic(Point goal, Point next)
+int Manhattan(Point goal, Point next)
 {
     return Math.Abs(goal.Row - next.Row) + Math.Abs(goal.Column - next.Column);
 }
