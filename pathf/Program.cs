@@ -29,8 +29,7 @@ List<Point> GetShortestPath(string[,] map, Point start, Point goal)
     var distances = new Dictionary<Point, int>(); // dict with distances between points (weight of each edge)
     var origins = new Dictionary<Point, Point>(); // create to find later its neighbours (from which we go)
     var velocities = new Dictionary<Point, float>();
-    var time = new Dictionary<Point, float>();
-    
+
 
     var frontier = new PriorityQueue<Point, int>(); 
     frontier.Enqueue(start, 0);
