@@ -40,7 +40,6 @@ List<Point> GetShortestPath(string[,] map, Point start, Point goal)
     Point current = default;
     while (frontier.Count != 0)
     {
-        // ? verification doesn't work
         current = frontier.Dequeue();
         if (current.Equals(goal))
         {
@@ -128,11 +127,3 @@ List<Point> GetNeighbours(string[,] map, Point point)
 float totalTime = times.Sum();
 Console.WriteLine();
 Console.WriteLine("total travel time:" + Math.Round(totalTime, 2) + "hours");
-//Console.WriteLine(map.GetLength(0));
-//Console.WriteLine(map.GetLength(1));
-
-// dimension 0 - width - columns
-// dimension 1 - height - rows
-
-// check movement cost
-// a star and heuristic
